@@ -114,26 +114,32 @@
 //  // - методи add, substruct, divide, multiply
 //  // Об'єкт класу може проводити послідовні операції у вигляді ланцюжка
 // class Calculator {
-//   number () {
-//     this.a;
-//     this.b;
+//   constructor(value) {
+//     this.result = value;
 //   }
-//   add () {
-
+//   number() {
+//     return this.value;
 //   }
-//   substruct () {
-
+//   add() {
+//     return (this.result += value);
+//   }
+//   substruct() {
+//     return (this.result /= value);
 //   }
 //   divide() {
-
+//     return (this.result -= value);
 //   }
-//   multiply () {
-
+//   multiply() {
+//     return (this.result *= value);
 //   }
-//   getResult () {
-//    return  this.result;
+//   getResult() {
+//     return this.result;
 //   }
 // }
+
+// const calc = new Calculator(10);
+// // const result = calc.number(10);
+// console.log(calc);
 
 // Завдання 12:
 //  // Напиши клас Client який створює об'єкт з властивостями login email.
